@@ -32,7 +32,7 @@ Java is also required to use elasticsearch.
 You can install the package through composer with the following command:
 
 ```bash
-$ composer require archy-bold/eloquent-sluggable
+$ composer require 'archy-bold/eloquent-sluggable:0.*'
 ```
 
 Next, run `composer update` from your command line to get the dependencies.
@@ -52,7 +52,7 @@ Then, update `config/app.php` and add an entry for the service provider.
 To get the default config.php file you must run the following command:
 
 ```bash
-php artisan vendor:publish
+$ php artisan vendor:publish
 ```
 
 <a name="setup"></a>
