@@ -1,0 +1,26 @@
+{
+    "name": "archy-bold/eloquent-searchable",
+    "description": "A service layer to provide support for search on your Eloquent models. WIP only with elasticsearch support currently.",
+    "keywords": ["laravel","eloquent","search","elasticsearch"],
+    "homepage": "https://github.com/archy-bold/eloquent-searchable",
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/config": "5.*",
+        "illuminate/database": "5.*",
+        "illuminate/support": "5.*",
+        "elasticsearch/elasticsearch": "~1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Simon Archer",
+            "email": "hello@archybold.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ArchyBold\\EloquentSearchable\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
