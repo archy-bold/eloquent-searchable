@@ -14,7 +14,7 @@ class SearchServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		//
+		$this->handleConfigs();
 	}
 
 	/**
@@ -30,6 +30,16 @@ class SearchServiceProvider extends ServiceProvider {
         	$search->boot();
             return $search;
         });
+	}
+
+	/**
+	 * Register the configuration.
+	 */
+	private function handleConfigs()
+	{
+		$configPath = __DIR__ . '/../config/search.php';
+		$this->publishes([$configPath => config_path('search.php')]);
+		$this->mergeConfigFrom($configPath, 'search');
 	}
 
 }
