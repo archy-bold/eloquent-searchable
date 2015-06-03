@@ -82,8 +82,6 @@ Your model should implement `SearchableModel` and use `SearchableTrait`. You sho
 
 Next add your model to the `search.php` config file.
 
-By default, none of your models will be indexed. They will be automatically indexed when created or updated. If you delete a model, it will be removed from the index too.
-
 ```php
 	'models' => [
 		'users' => 'App\User',
@@ -100,6 +98,8 @@ $results = $user->search("query string");
 ```
 
 Where the returned object is an `EloquentCollection` of the results.
+
+> **NOTE**: By default, none of your models will be indexed. They will be automatically indexed when created or updated. If you delete a model, it will be removed from the index too.
 
 <a name="usage"></a>
 ## Usage
