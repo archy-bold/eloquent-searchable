@@ -82,6 +82,8 @@ Your model should implement `SearchableModel` and use `SearchableTrait`. You sho
 
 Next add your model to the `search.php` config file.
 
+By default, none of your models will be indexed. They will be automatically indexed when created or updated. If you delete a model, it will be removed from the index too.
+
 ```php
 	'models' => [
 		'users' => 'App\User',
@@ -166,6 +168,7 @@ Elasticsearch isn't running. You'll need to start up the server with `bin/elasti
 <a name="issues"></a>
 ## Issues
 
+* Initial indexing - the only models to be indexed are those added after the package has been installed.
 * Basic text search only - the package currently only supports very basic searching on text.
 * Limited results - only a limited number of results (10) are currently returned and pagination isn't supported.
 * Limited search engines - only elasticsearch is currently supported. You need server access and Java installed to use elasticsearch.
