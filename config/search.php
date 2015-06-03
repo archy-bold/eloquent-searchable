@@ -16,8 +16,8 @@ return array(
 	 * You should use the full namespaced path to the class.
 	 * The key should be a simple, unique name for the class. 
 	 */
-	'models' => array(
+	'models' => [
 		// 'users' => 'App\User',
-	),
+	],
 
 );
