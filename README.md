@@ -32,7 +32,7 @@ Java is also required to use elasticsearch.
 You can install the package through composer with the following command:
 
 ```bash
-$ composer require 'archy-bold/eloquent-sluggable:0.*'
+$ composer require 'archy-bold/eloquent-searchable:0.*'
 ```
 
 Next, run `composer update` from your command line to get the dependencies.
